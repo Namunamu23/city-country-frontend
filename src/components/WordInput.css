@@ -1,0 +1,88 @@
+/* Container for the entire component */
+.word-input-container {
+    text-align: center;
+    margin-top: 50px;
+    font-family: sans-serif;
+  }
+  
+  /* Modal overlay (darkened background) */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999; /* Appear on top of everything */
+  }
+  
+  /* Modal content box */
+  .modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    min-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Inputs inside the modal */
+  .modal-input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* Button styles */
+  .btn {
+    padding: 8px 16px;
+    margin: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Additional classes for specific buttons */
+  .host-room-button {
+    margin-bottom: 20px;
+  }
+  
+  .join-room-button {
+    margin-left: 10px;
+  }
+  
+  /* Modal button group */
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Room list and player list styling */
+  .room-list,
+  .player-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: left;
+  }
+  
+  .room-list-item,
+  .player-list-item {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
