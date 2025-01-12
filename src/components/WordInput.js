@@ -225,12 +225,12 @@ const WordInput = () => {
 
       <h3>Players in Room:</h3>
       <ul className="player-list">
-        {players.map((player) => (
-          <li key={player} className="player-list-item">
-            {player}
-          </li>
-        ))}
-      </ul>
+  {players.map((player, index) => (
+    <li key={index} className="player-list-item">
+      {player.name} - {player.score}
+    </li>
+  ))}
+</ul>
     </div>
   );
 };
