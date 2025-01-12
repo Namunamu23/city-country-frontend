@@ -22,11 +22,11 @@ function LoginPage() {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/auth/guest', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name: username }),
-      });
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/auth/guest`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name: username }),
+          });
       if (!response.ok) {
         throw new Error('Failed to create guest');
       }
